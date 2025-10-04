@@ -1,0 +1,95 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(157, 10, 177);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(musica-electronica.jpg);
+}
+
+.save {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.save button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffcc00;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 25px;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hover */
+.save button:hover {
+  background: rgba(255, 204, 0, 0.2);
+  box-shadow: 0 0 20px #ffcc00;
+  border-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+/* Al hacer clic */
+.save button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.key {
+  border: 3px solid #fff;
+  border-radius: 12px;
+  padding: 20px 15px;
+  width: 100px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.1s ease;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.key kbd {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.key .sound {
+  font-size: 0.9rem;
+  color: #ddd;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Efecto cuando la tecla se activa */
+.key.playing {
+  transform: scale(1.1);
+  border-color: #ffcc00;
+  box-shadow: 0 0 20px #ffcc00;
+  background: rgba(255, 204, 0, 0.2);
+}
