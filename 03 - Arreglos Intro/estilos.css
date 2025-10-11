@@ -1,0 +1,84 @@
+/* Fuente general */
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: #e6ebef;
+    color: #2e3a45;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+body > * {
+    margin-top: 20px;
+}
+
+/* Campos de texto y select */
+input[type="text"], select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #90a4ae;
+    border-radius: 8px;
+    background-color: #f4f7f9;
+    color: #2e3a45;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 220px;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #607d8b;
+    box-shadow: 0 0 6px rgba(96, 125, 139, 0.4);
+}
+
+/* Botón */
+button {
+    background-color: #607d8b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #546e7a;
+    transform: translateY(-2px);
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 30px;
+    width: 80%;
+    max-width: 400px;
+    background-color: #f0f4f7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(96, 125, 139, 0.2);
+}
+
+/* Lista de alumnos */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #cfd8dc;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    color: #263238;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.03);
+    background-color: #b0bec5;
+}
